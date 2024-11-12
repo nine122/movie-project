@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { FaSearch } from "react-icons/fa";
 import MoCard from "../components/MoCard";
 
 export default function Movies() {
@@ -34,7 +33,22 @@ export default function Movies() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full p-2 pl-10 rounded text-black"
             />
-            <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              width="16"
+              height="16"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M11 4a7 7 0 017 7c0 1.3-.37 2.52-1 3.54L21 20l-2 2-5.46-5.46a7 7 0 11-2.54-11.54zm-6 7a6 6 0 1112 0 6 6 0 01-12 0z"
+              />
+            </svg>
           </div>
         </div>
 
